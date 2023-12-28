@@ -2,7 +2,14 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "vite",
+        "dev": "npm run development",
+        "development": "mix",
+        "prod": "npm run production",
+        "production": "mix --production",
+        "watch": "mix watch",
+        "hot": "npm run watch --hot",
+        "watch-poll": "npm run watch -- --watch-options-poll=1000",
+        "dev-vite": "vite",
         "build": "vite build"
     },
     "devDependencies": {
